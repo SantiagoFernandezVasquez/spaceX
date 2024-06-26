@@ -1,3 +1,133 @@
 body {
-    background: linear-gradient(to right, #14162c, #353757);
+    background: linear-gradient(to bottom, #0c0e1f, #34365a);
+}
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 33px;
+    margin-top: -15px;
+}
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.container_left {
+    width: 300px;
+    height: 690px;
+    padding-left: 2px;
+}
+.informacion1 {
+    display: flex;
+    flex-direction: row;
+}
+.informacion1 img {
+    margin-top: -118px;
+}
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.texto1 b {
+    font-size: 19px;
+}
+.texto1 p {
+    color: #b8b8bd;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.informacion2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.informacion2 img {
+    margin-top: -30px;
+}
+.texto2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.texto2 b {
+    font-size: 19px;
+}
+.texto2 p {
+    color: #b8b8bd;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.informacion3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.informacion3 img {
+    margin-top: -30px;
+}
+.texto3 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.texto3 b {
+    font-size: 19px;
+}
+.texto3 p {
+    color: #b8b8bd;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.informacion4 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.informacion4 img {
+    margin-top: -30px;
+}
+.texto4 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.texto4 b {
+    font-size: 19px;
+}
+.texto4 p {
+    color: #b8b8bd;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.container_center {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    height: 690px;
+    background-color: black;
+}
+.circulos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.circulo1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 13px solid #298bfe;
+    margin-top: 10px;
+}
+.circulo2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 13px solid #298bfe;
+    margin-top: 10px;
+}
+.container_right {
+    width: 300px;
+    height: 690px;
 }
