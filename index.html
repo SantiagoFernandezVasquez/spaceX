@@ -3,54 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space X</title>
+    <title>Rockets</title>
     <link rel="stylesheet" href="Css/style.css">
+    <script src="Js/main.js" defer></script>
 </head>
 <body>
     <section class="father">
         <section class="title">
-            <p>FALCON HEAVY</p>
+            <p id="name"></p>
         </section>
         <section class="containers">
             <section class="container_left">
                 <div class="informacion1">
                     <img src="Storage/Img/Icon.svg">
                     <div class="texto1">
-                        <b>United States</b>
-                        <p>With the ability to lift into orbit over 54
-                        metric tons (119,000 lb)-a mass
-                        equivalent to 737 jetliner loaded with
-                        passengers, crew, luggage and fuel-
-                        Falcon Heavy can lift more than twice
-                        the payload of the next closets 
-                        operational vehicle, the Delta IV Heavy,
-                        at one-third the cost.</p>
+                        <b id="country"></b>
+                        <p id="description"></p>
                     </div>
                 </div>
                 <div class="informacion2">
                     <img src="Storage/Img/Icon.svg">
                     <div class="texto2">
-                        <b>The estimulated cost per 
-                            rocket launch</b>
-                        <p>$ 90.000.000</p>
+                        <b>The estimated cost per rocket launch</b>
+                        <p id="cost_per_launch"></p>
                     </div>
                 </div>
                 <div class="informacion3">
                     <img src="Storage/Img/Icon.svg">
                     <div class="texto3">
-                        <b>The date of the first flight of
-                        the rocket</b>
-                        <p>2018-02-06</p>
+                        <b>The date of the first flight of the rocket</b>
+                        <p id="first_flight"></p>
                     </div>
                 </div>
                 <div class="informacion4">
                     <img src="Storage/Img/Icon.svg">
                     <div class="texto4">
                         <b>Read more about the rocket</b>
-                        <p>Wikipedia</p>
+                        <p><a id="wikipedia" href="#" target="_blank">Wikipedia</a></p>
                     </div>
                 </div>
-            </section>
+            </section>  
             <section class="container_center">
                 <div class="circulos">
                     <div class="circulo1">
@@ -80,27 +72,22 @@
                                 <p>Landing legs</p>
                                 <p>Leg material</p>
                                 <div class="infmini">
-                                    <p1>rocket</p1>
-                                    <p1>Active</p1>
-                                    <p1>2</p1>
-                                    <p1>2</p1>
-                                    <p1>12</p1>
-                                    <p1>carbon fiber</p1>
+                                    <p1 id="type"></p1>
+                                    <p1 id="active"></p1>
+                                    <p1 id="stages"></p1>
+                                    <p1 id="boosters"></p1>
+                                    <p1 id="landing_legs_number"></p1>
+                                    <p1 id="landing_legs_m"></p1>
                                 </div>
                             </div>
                         </div>  
                     </div>
                     <div class="small_container2">
                         <div class="images">
-                            <div class="img1">
-
-                            </div>
-                            <div class="img2">
-
-                            </div>
-                            <div class="img3">
-
-                            </div>
+                            <div class="img1" id="img1"></div>
+                            <div class="img2" id="img2"></div>
+                            <div class="img3" id="img3"></div>
+                            <div class="img4" id="img4"></div>
                         </div>
                     </div>
                     <div class="small_container3">
@@ -108,23 +95,25 @@
                         <div class="separador"></div>
                         <div class="info">
                             <div class="information6">
-                                <p>Type</p>
-                                <p>Maximum power loss</p>
-                                <p>Engine availability</p>
-                                <p>Number of engines</p>
-                                <p>Stage 1 fuel</p>
-                                <p>Stage 2 fuel</p>
-                                <div class="inf0mini">
-                                    <p1>merlin 1D+</p1>
-                                    <p1>6</p1>
-                                    <p1>octaweb</p1>
-                                    <p1>27</p1>
-                                    <p1>liquid oxygen</p1>
-                                    <p1>RP-1 kerosene</p1>
+                                <div class="infocol">
+                                    <p>Type</p>
+                                    <p>Maximum power loss</p>
+                                    <p>Engine availability</p>
+                                    <p>Number of engines</p>
+                                    <p>Stage 1 fuel</p>
+                                    <p>Stage 2 fuel</p>
+                                </div>
+                                <div class="infomini">
+                                    <p id="engine_type"></p>
+                                    <p id="engine_version"></p>
+                                    <p id="engine_loss_max"></p>
+                                    <p id="engine_propellant_1"></p>
+                                    <p id="engine_propellant_2"></p>
+
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </section>
             <section class="container_right">
@@ -146,6 +135,9 @@
                 <div class="barra1"></div>
                 <p>Height rocket shield:</p>
                 <div class="barra1"></div>
+                <div class="paginas">
+
+                </div>
             </section>
         </section>
     </section>
@@ -153,23 +145,38 @@
         <ul class="footer__ul">
             <li>
                 <a href="index.html">
-                    <img src="Storage/Img/Icon (1).svg">
-                    <p>ROCKETS</p>
+                    <img src="Storage/Img/Icon (1).svg" height="40px" >
+                    <p>Rockets</p>
                 </a>
             </li>
             <li>
-                <a href="views/detail.html">
+                <a href="Views/capsules.html">
                     <img src="storage/img/bag.svg">
+                    <p>Capsules</p>
                 </a>
             </li>
             <li>
-                <a href="views/checkout.html">
+                <a href="Views/crew.html">
                     <img src="storage/img/heart.svg">
+                    <p>Crew</p>
                 </a>
             </li>
             <li>
                 <a href="index.html">
                     <img src="storage/img/profile.svg">
+                    <p>Launches</p>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="" alt="">
+                    <p>Hola</p>
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="" alt="">
+                    <p>Adios</p>
                 </a>
             </li>
         </ul>   
