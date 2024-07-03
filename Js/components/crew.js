@@ -1,30 +1,28 @@
-import { getLaunche } from "../modules/app.js";
-import { plantillaPagination } from "./pagination.js";
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Documento cargado.');
 
-export const plantillaCrew = async (data)=>{
-    let plantilla = "";
-    let plantillaPag = "";
-    plantillaPag = await plantillaPagination(10);
-    for (const element of data){
-        let launche = await getLaunche(element.launches);
-        plantilla += /*html*/`
-            <article class="info__member">
-                <div class="container__info">
-                    <div class="content__info">
-                        <h1>${element.name}</h1>
-                        <h5>${element.agency} - ${element.status.toUpperCase()}</h5>
-                        <p>Biografia da click <a href="${element.wikipedia}" style="color: white">aqui</a></p>
-                        <p>Participo en:<br>${launche.name}</p>
-                    </div>
-                    <div class="image__info">
-                        <img src="${element.image}" referrerpolicy="no-referrer">
-                    </div>
-                </div>
-                <div class="pagination-container">
-                    ${plantillaPag}
-                </div>
-            </article>
-        `;
-    };
-    return plantilla;
-};
+    fetch('https://api.spacexdata.com/v4/crew')
+        .then(response => {
+            console.log('Respuesta recibida de la API.');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Datos de la API:', data);
+
+            const astronaut = data[0];
+
+            document.getElementById('name').textContent = astronaut.name;
+            document.getElementById('agency').textContent = astronaut.agency;
+            document.getElementById('crew-image').src = astronaut.image;
+            document.getElementById('wikipedia').href = astronaut.wikipedia;
+
+            const statusElement = document.getElementById('status');
+            statusElement.textContent = astronaut.status === 'active' ? 'Activo' : 'Inactivo';
+        })
+        .catch(error => {
+            console.error('Error al obtener los datos de la API:', error);
+        });
+});

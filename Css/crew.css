@@ -1,4 +1,3 @@
-/* Establecer la altura del body y html al 100% */
 html, body {
     height: 100%;
     margin: 0;
@@ -11,10 +10,11 @@ html, body {
     height: 100%;
 }
 .title {
+    display: flex;
+    justify-content: center;
     font-size: 33px;
     margin-top: -15px;
     color: white;
-    text-align: center;
 }
 
 .containers {
@@ -26,72 +26,6 @@ html, body {
 .container_left {
     width: 350px;
     padding-left: 10px;
-}
-.informacion1 {
-    display: flex;
-    flex-direction: row;
-}
-.informacion1 img {
-    margin-top: -220px;
-}
-.texto1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-.texto1 b {
-    font-size: 19px;
-    color: white;
-}
-.texto1 p {
-    color: #b8b8bd;
-    font-size: 13.5px;
-    margin: 10px 0;
-}
-.informacion2 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-}
-.informacion2 img {
-    margin-top: -30px;
-}
-.texto2 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    color: white;
-}
-.texto2 b {
-    font-size: 19px;
-    color: white;
-}
-.texto2 p {
-    color: #b8b8bd;
-    font-size: 13px;
-    margin-top: 4px;
-}
-.informacion3 {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-}
-.informacion3 img {
-    margin-top: -30px;
-}
-.texto3 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-.texto3 b {
-    font-size: 19px;
-    color: white;
-}
-.texto3 p {
-    color: #b8b8bd;
-    font-size: 13px;
-    margin-top: 4px;
 }
 .informacion4 {
     display: flex;
@@ -119,40 +53,6 @@ html, body {
     display: flex;
     flex-direction: column;
     width: 1000px;
-}
-.circulos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-}
-.circulo1, .circulo2 {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 13px solid #298bfe;
-    margin-top: 20px;
-    text-align: center;
-    padding: 17px;
-    color: white;
-}
-.circulo1 {
-    margin-left: 200px;
-}
-.circulo2 {
-    margin-left: 350px;
-}
-.circulo1, .circulo2 b {
-    font-size: 17px;
-}
-.circulo1 p {
-    font-size: 13px;
-    color: white;
-    margin: 2px 0;
-}
-.circulo2 p {
-    font-size: 13px;
-    color: white;
-    margin: 2px 0;
 }
 .container_max {
     display: flex;
@@ -191,11 +91,8 @@ html, body {
 .information5 {
     display: flex;
     flex-direction: column;
-    width: 85%;
-    height: 130px;
-    position: relative;
-    overflow: hidden;
-    overflow-y: auto;
+    width: 93%;
+    height: 140px;
 }
 .information5 p {
     margin: 5px 0;
@@ -222,57 +119,23 @@ html, body {
 .images {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 80%;
     width: 100%;
-    overflow-x: auto;
     margin-top: -100px;
 }
-.img1, .img2, .img3, .img4 {
-    height: 180px;
+.img1{
+    height: 100%;
     width: 300px;
     border-radius: 10px;
     flex-shrink: 0;
     margin-left: 10px;
-    margin-right: 20px;         
+    margin-right: 20px; 
 }
-.images .img1, .images .img2, .images .img3, .images .img4 {
+.images .img1 {
     width: 100%;
     height: 180px;
     background-size: cover;
     background-position: center;
-}
-.small_container3 {
-    width: auto;
-    padding-top: 200px;
-    padding-left: 25px;
-}
-.small_container3 b {
-    color: #b8b8bd;
-    margin-left: 10px;
-}
-.information6 {
-    display: flex;
-    flex-direction: row;
-    width: 93%;
-    height: 140px;
-    overflow: auto;
-}
-.information6 .infocol, .information6 .infomini {
-    display: flex;
-    flex-direction: column;
-}
-.information6 .infocol {
-    flex: 1;
-    margin-right: 20px;
-}
-.information6 p {
-    margin: 5px 0;
-    color: #b8b8bd;
-}
-.infomini p {
-    color: white;
-    text-align: right;
-    margin: 6.9px 0;
 }
 .container_right {
     width: 550px;
@@ -282,17 +145,9 @@ html, body {
 .container_right p {
     margin-top: -1px;
 }
-.barra1 {
-    width: 200px;
-    height: 7px;
-    background-color: #298bfe;
-    border-radius: 7px;
-    margin-bottom: 8px;
-}
 .paginas {
     width: 90%;
     height: 100px;
-    margin-top: 110px;
 }
 .footer {
     position: fixed;
