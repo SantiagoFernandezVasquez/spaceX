@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 linkSection.innerHTML = `<a href="${item.links.article}" target="_blank">Read more</a>`;
             });
         })
-        .catch(error => console.error('Error fetching data:', error));
 });
 document.addEventListener("DOMContentLoaded", function () {
     let currentPage = 1;

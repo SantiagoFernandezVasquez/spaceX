@@ -7,7 +7,6 @@ async function fetchCompanyData() {
         console.error('Error fetching company data:', error);
     }
 }
-
 function updateCompanyInfo(data) {
     document.querySelector('.title p').innerText = data.name;
     document.querySelector('.texto1 p').innerText = data.summary;
@@ -16,5 +15,4 @@ function updateCompanyInfo(data) {
     document.querySelector('.texto4 p').innerHTML = `<a href="${data.links.website}" target="_blank">${data.links.website}</a>`;
 }
 
-// Llamar a la función para obtener y mostrar los datos cuando se cargue la página
 window.onload = fetchCompanyData;
